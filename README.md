@@ -26,8 +26,8 @@ console.log(data.data1); // foo
 console.log(data.data2); // bar\nbaz
 
 // getSync
-console.log( getSync('data1') ); // foo
-console.log( getSync('data2') ); // bar\nbaz
+console.log( dataSection.getSync('data1') ); // foo
+console.log( dataSection.getSync('data2') ); // bar\nbaz
 
 /* __DATA__
 @@ data1
@@ -54,7 +54,7 @@ Read from data1.js.
 var dataSection = require('data-section');
 
 // getAll
-dataSection.getAll(function(err, data) {
+dataSection.getAll(__dirname + '/data1.js', function(err, data) {
   console.log(data.foo); // bar
 });
 ```
