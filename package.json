@@ -1,0 +1,11 @@
+{
+  "name": "data-section",
+  "description": "Read data from comment, like a perl's Data::Section::Simple.",
+  "version": "0.1.0",
+  "author": "Kazuhito Hokamura",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/hokaccha/node-data-section.git"
+  },
+  "main": "./index"
+}
