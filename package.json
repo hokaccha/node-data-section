@@ -1,8 +1,8 @@
 {
   "name": "data-section",
-  "description": "Read data from comment, like a perl's Data::Section::Simple.",
+  "description": "Read data from comment, like as perl's Data::Section::Simple.",
   "version": "0.1.0",
-  "author": "Kazuhito Hokamura",
+  "author": "Kazuhito Hokamura <k.hokamura@gmail.com>",
   "repository": {
     "type": "git",
     "url": "http://github.com/hokaccha/node-data-section.git"
