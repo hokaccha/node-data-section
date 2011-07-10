@@ -2,6 +2,10 @@
 
 Read data from comment, like a perl's Data::Section::Simple.
 
+## Install
+
+    $ npm install data-section
+
 ## Usage
 
 ### basic
