@@ -1,7 +1,7 @@
 {
   "name": "data-section",
   "description": "Read data from comment, like as perl's Data::Section::Simple.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Kazuhito Hokamura <k.hokamura@gmail.com>",
   "repository": {
     "type": "git",
