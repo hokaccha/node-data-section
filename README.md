@@ -14,7 +14,7 @@ Read data from comment, like a perl's Data::Section::Simple.
 var dataSection = require('data-section');
 
 // getAll
-dataSection.getAll(function(err, data) {
+dataSection.get(function(err, data) {
   console.log(data.data1); // foo
   console.log(data.data2); // bar\nbaz
 });
@@ -25,7 +25,7 @@ dataSection.get('data1', function(err, data) {
 });
 
 // getAllSync
-var data = dataSection.getAllSync();
+var data = dataSection.getSync();
 console.log(data.data1); // foo
 console.log(data.data2); // bar\nbaz
 
@@ -56,11 +56,25 @@ Read from data1.js.
 
 ``` js
 var dataSection = require('data-section');
+var data1js = __dirname + '/data1.js';
 
 // getAll
-dataSection.getAll(__dirname + '/data1.js', function(err, data) {
+dataSection.get({ filename: data1js }, function(err, data) {
   console.log(data.foo); // bar
 });
+
+// get
+dataSection.get({ key: 'foo', filename: data1js }, function(err, data) {
+  console.log(data); // bar
+});
+
+// getAllSync
+var data = dataSection.getSync({ filename: data1js });
+console.log(data.foo); // bar
+
+// getSync
+var data = dataSection.getSync({ key: 'foo', filename: data1js });
+console.log(data); // bar
 ```
 
 ## test
