@@ -7,5 +7,6 @@
     "type": "git",
     "url": "http://github.com/hokaccha/node-data-section.git"
   },
+  "keywords": ["cli", "data", "comment"],
   "main": "./index"
 }
