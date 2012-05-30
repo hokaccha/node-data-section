@@ -61,7 +61,7 @@ module.exports = testCase({
     }, 'no such file');
 
     dataSection.get({ filename: 'foo.js' }, function(err) {
-      t.ok(/^ENOENT, No such file or directory/.test(err.message));
+      t.ok(/^ENOENT/.test(err.message));
       t.done();
     });
   }
