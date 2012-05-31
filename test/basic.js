@@ -14,7 +14,7 @@ module.exports = testCase({
     dataSection.get(function(err, data) {
       t.ok(!err, 'error is null');
       t.equals(data.foo1, 'bar1', 'get hash data');
-      t.equals(data.foo2, 'bar2-1\nbar2-2', 'multi line');
+      t.equals(data.foo2, 'bar2-1 @@ foo\nbar2-2', 'multi line');
       t.equals(data.foo3, 'bar3', 'separate section');
       t.done();
     });
@@ -22,7 +22,7 @@ module.exports = testCase({
   getAllSync: function(t) {
     var data = dataSection.getSync();
     t.equals(data.foo1, 'bar1', 'get hash data');
-    t.equals(data.foo2, 'bar2-1\nbar2-2', 'multi line');
+    t.equals(data.foo2, 'bar2-1 @@ foo\nbar2-2', 'multi line');
     t.equals(data.foo3, 'bar3', 'separate section');
     t.done();
   },
@@ -71,7 +71,7 @@ module.exports = testCase({
 @@ foo1
 bar1
 @@ foo2
-bar2-1
+bar2-1 @@ foo
 bar2-2
 __DATA__*/
 
