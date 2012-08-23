@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/hokaccha/node-data-section.png)](http://travis-ci.org/hokaccha/node-data-section)
 # node-data-section
 
 Read data from comment, like a perl's Data::Section::Simple.
